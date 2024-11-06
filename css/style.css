@@ -11,7 +11,7 @@
 }
 
 .backGroung{
-background-image: url("/images/HomeIMG.jpg");
+background-image: url(../img/HomeIMG.jpg);
     position: relative;
     height: 100dvh;
 }
