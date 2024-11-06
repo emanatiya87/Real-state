@@ -1,0 +1,198 @@
+:root{
+--color-primary: #ff5a5f;
+--color-secondary:#24324a;
+--background-gray:#F7F7F7;
+--background-pink:#FFE8E9;
+--font-family: 'Nunito', sans-serif;
+
+}
+*{
+    font-family: var(--font-family);
+}
+
+.backGroung{
+    background-image: url(../images/1.jpg);
+    position: relative;
+    height: 100dvh;
+}
+.backGroung .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+/* nav bar */
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+nav ul li a:hover{
+color: var(--color-primary);
+}
+@media screen and (max-width: 1084px) {
+    nav .col-lg-6{
+        display: none; 
+    }
+    .menue {
+        display: block;
+    }
+}
+@media screen and (min-width: 1084px) {
+    .navbar .navbar-brand ,.navbar-toggler{
+        display: none; 
+    }
+  
+}
+/* end of nav */
+.backGroung .title{
+    margin-top: 33dvh;
+ }
+ /* slider */
+
+.slider {
+    overflow: hidden;
+    background-color: var(--background-gray);
+}
+.cards {
+    transition: transform 0.5s ease;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.slider .card h6{
+    margin-top: 7px;
+    color: var(--color-primary);
+}
+.slider ul li{
+    padding-inline-end: 20px;
+}
+.slider .images {
+    position: relative;
+}
+.slider .btns{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.slider .btns .featturedBtn{
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 10px; margin-inline-end:7px;
+}
+.slider .btns .stateBtn{
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 10px; margin-inline-end:7px;
+}
+.slider .images .price{
+    bottom: 10px;
+    padding: 0 10px;
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+}
+.slider .blackBox{
+    background-color: rgba(0, 0, 0, 0.589);
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.slider .blackBox i{
+    color: white;
+}
+
+/* end of slider */
+
+/* cities */
+
+.cities .cityName{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+left: 40%;
+}
+ /*  Why choose Us */
+ .chooseUS{
+    background-color: var(--background-gray);
+ }
+ .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--background-pink);
+    margin: 30px auto;
+ }
+ .chooseUS .circle i{
+   color: var(--color-primary);
+font-size: 45px;
+}
+.card{
+    margin: 20px 0;
+}
+.chooseUS .card h6{
+    color: var(--color-primary);
+}
+ .images img{
+    width: 100%;
+    height: 250px;
+} 
+
+
+/* footer */
+.red-bar{
+    background-color: var(--color-primary);
+} 
+.red-bar button{
+    background-color: #ffffff4f;
+}
+footer{
+    background-color: var(--color-secondary);
+}
+.dark-footer{
+    background-color: #131b29;
+    padding: 20px 0;
+}
+footer input{
+border-radius: 15px;
+border:  none;
+background-color: rgba(255, 255, 255, 0.199);
+  }
+footer .cicleBtn{
+background-color: rgba(255, 255, 255, 0.199);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: none;
+}
+/* end footer */
+/* up botton */
+.up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0e151f;
+
+}
+

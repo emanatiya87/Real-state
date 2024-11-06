@@ -1,0 +1,120 @@
+:root{
+    --color-primary: #ff5a5f;
+    --color-secondary:#24324a;
+    --background-gray:#F7F7F7;
+    --background-pink:#FFE8E9;
+    --font-family: 'Nunito', sans-serif;
+    
+    }
+    *{
+        font-family: var(--font-family);
+    }
+
+
+header{
+    background-color: white;
+}
+/* nav bar */
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+}
+nav ul li a:hover{
+color: var(--color-primary);
+}
+@media screen and (max-width: 1084px) {
+    nav .col-lg-6{
+        display: none; 
+    }
+    .menue {
+        display: block;
+    }
+}
+@media screen and (min-width: 1084px) {
+    .navbar .navbar-brand ,.navbar-toggler{
+        display: none; 
+    }
+  
+}
+/* end of nav */
+/* about us */
+.aboutUs{
+    background-image: url(../images/inner-pagebg.17d731a1.jpg);
+    width: 100%;
+    height: 80dvh;
+    position: relative;
+}
+.aboutUs .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.aboutUs .title{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    color: white;
+}
+.images{
+    height: 70dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+background-image: url(../images/download\ \(1\).jfif);
+background-size: cover;
+}
+.images .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+cursor: pointer;
+}
+.images .circle i{
+    color: white;
+}
+
+/* footer */
+.red-bar{
+    background-color: var(--color-primary);
+} 
+.red-bar button{
+    background-color: #ffffff4f;
+}
+footer{
+    background-color: var(--color-secondary);
+}
+.dark-footer{
+    background-color: #131b29;
+    padding: 20px 0;
+}
+footer input{
+border-radius: 15px;
+border:  none;
+background-color: rgba(255, 255, 255, 0.199);
+  }
+footer .cicleBtn{
+background-color: rgba(255, 255, 255, 0.199);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: none;
+}
+/* end footer */
+/* up botton */
+.up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0e151f;
+
+}
